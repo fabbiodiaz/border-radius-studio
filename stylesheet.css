@@ -1,0 +1,96 @@
+body {
+    background-color:#333;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin:0px;
+    padding-top: 0px;
+    text-align: center;
+    color:#eee;
+}
+
+header {
+    background-color:#444;
+    border-bottom: whitesmoke;
+    border-bottom-width: 2px;
+}
+
+header>h1 {
+    margin:0px;
+    font-size: 6vmin;
+    padding:3vmin
+}
+
+#contend {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#display {
+    display:inline-block;
+}
+
+#box {
+    background-image: linear-gradient(-225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 255, 0) 60%, #0ff 100%), linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+}
+
+@media(orientation: portrait) {
+    #box {
+        display:inline-block;
+        width: 78vw;
+        height: 78vw;
+        margin: 10vmin;
+    }
+}
+
+@media(orientation: landscape) {
+    #box {
+        display:inline-block;
+        width:50vh;
+        height: 50vh;
+        margin: 2vw;
+    }
+}
+
+@media(orientation: portrait) {
+    #controls {
+        display:inline-block;
+        width: 78vw;
+        height: 39vw;
+        margin: 10vmin;
+    }
+}
+
+@media(orientation: landscape) {
+    #controls {
+        display:inline-block;
+        width:50vh;
+        height: 25vh;
+        margin: 2vw;
+    }
+}
+#css-result {
+    background-color: indigo;
+}
+
+#Controls {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0px;
+}
+
+.control {
+    display:inline-block;
+    width: 43vw;
+    margin: 1vh 0px;
+}
+
+
+
+
+
+
+#switch-div {
+    display:none;
+}
