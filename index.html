@@ -16,29 +16,30 @@
             <span id="box"></span>
             <div>
                 <span id="css-result">border-radius: 0% 0% 0% 0%</span>
-                <button>Copy</button>
+                <input type="hidden" value="" id="css-result-copy">
+                <button id="btn">Copy</button>
             </div>
         </div>
         <div id="controls">
             <div id="1" class="control basic">
                 <span class="label">Top-Left:</span>
-                <span class="value">0</span>
-                <input type="range" value="0" min="0" max="100" step="1">
+                <input type="number" min="0" max="100" class="value" value=0>
+                <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
             <div id="2" class="control basic">
                 <span class="label">Top-Right:</span>
-                <span class="value">0</span>
-                <input type="range" value="0" min="0" max="100" step="1">
+                <input type="number" min="0" max="100" class="value" value=0>
+                <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
             <div id="3" class="control basic">
                 <span class="label">Botton-Righ:</span>
-                <span class="value">0</span>
-                <input type="range" value="0" min="0" max="100" step="1">
+                <input type="number" min="0" max="100" class="value" value=0>
+                <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
             <div id="4" class="control basic">
                 <span class="label">Botton-Left:</span>
-                <span class="value">0</span>
-                <input type="range" value="0" min="0" max="100" step="1">
+                <input type="number" min="0" max="100" class="value" value=0>
+                <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
             
             <div id="switch-div">
@@ -60,5 +61,8 @@
     <footer>
 
     </footer>
+
+    <script src="./index.js"></script>
+
 </body>
 </html>
