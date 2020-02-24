@@ -5,7 +5,6 @@ const updateBox = (topLeft, topRight,bottonRight,bottonLeft) => {
 let ranges = document.querySelectorAll(".control .range")
 let values = document.querySelectorAll(".control .value")
 let CSSResult = document.getElementById('css-result')
-let cssCopyInput = document.getElementById('css-result-copy')
 
 let borderValues=[]
 
@@ -44,3 +43,15 @@ values.forEach(value => {
         printCSSResult(CSSResult)
     }
 })
+
+copyButton = document.getElementById("btn")
+
+copyButton.onclick = event => {
+    const tempElement = document.createElement('textarea');
+    tempElement.value = CSSResult.innerHTML;
+    document.body.appendChild(tempElement);
+    tempElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempElement);
+    alert("Código Copiado!")
+}

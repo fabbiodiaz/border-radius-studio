@@ -1,16 +1,22 @@
+html {
+    height: 100%;
+    width: 100%;
+}
 body {
     background-color:#333;
     font-family: 'Trebuchet MS', sans-serif;
     margin:0px;
-    padding-top: 0px;
+    padding: 0px;
     text-align: center;
     color:#eee;
 }
 
 header {
     background-color:#444;
-    border-bottom: whitesmoke;
-    border-bottom-width: 2px;
+    border-bottom: #FF0099;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    height: 13vmin;
 }
 
 header>h1 {
@@ -19,6 +25,203 @@ header>h1 {
     padding:3vmin
 }
 
+
+@media(orientation:portrait) {
+    #box {
+        display:inline-block;
+        background-image: linear-gradient(-225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 255, 0) 60%, #0ff 100%), linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+        height: 60vmin;
+        width: 60vmin;
+        margin: 5vmin;
+    }
+
+    #contend {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #display {
+        width: 100vmin;
+        height: 100vmin;
+    }
+
+    #controls {
+        width: 100vmin;
+        height: 80vmin;
+    }
+
+    #css-result {
+        display:block;
+        font-size: 3vmin;
+        margin: 2vmin 25vmin;
+        width: 50vmin;
+        background-color: #FF0099;
+        padding: 2vmin 0px;
+        border-radius: 2.5vmin;
+    }
+
+    #btn {
+        margin:2vmin;
+        padding: 2vmin 6vmin;
+        border-radius: 3vmin;
+        background-color: #333;
+        color: #fff;
+        font-size: 2.5vmin;
+    }
+
+    .control {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        display:inline-block;
+        margin: 5vmin 0px;
+    }
+
+    .control > .label {
+        display:inline-block;
+        font-size: 5vmin;
+        width: 30vmin;
+    }
+
+    
+    .control > .value {
+        display:inline-block;
+        font-size: 5vmin;
+        width: 12vmin;
+        border-style:none;
+        border-radius: 0.8vmin;
+        background-color: #bbb;
+        padding:5px;
+    }
+
+    .control > .range {
+        display:inline-block;
+        width: 40vmin;
+        margin:0px 3vmin
+    }
+
+    #switch-div {
+        display:none;
+    }
+}
+
+@media(orientation:landscape) {
+    #box {
+        display:inline-block;
+        background-image: linear-gradient(-225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 255, 0) 60%, #0ff 100%), linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+        height: 40vmin;
+        width: 40vmin;
+        margin: 5vmin;
+    }
+
+    #contend {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: flex-end;
+        width: 100%;
+        height: 80vmin;
+    }
+
+    #display {
+        width: 49vmax;
+        height: 80vmin;
+    }
+
+    #controls {
+        width: 49vmax;
+        height: 80vmin;
+    }
+
+    #css-result {
+        display:block;
+        font-size: 2vmax;
+        margin: 2vmin 4vmax;
+        width: 40vmax;
+        background-color: #FF0099;
+        padding: 2vmin 0px;
+        border-radius: 2.5vmin;
+    }
+
+    #btn {
+        margin:2vmin;
+        padding: 2vmin 6vmin;
+        border-radius: 3vmin;
+        background-color: #333;
+        color: #fff;
+        font-size: 2.5vmin;
+    }
+
+    .control {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        display:inline-block;
+        margin: 2vmin 0px;
+    }
+
+    .control > .label {
+        display:inline-block;
+        font-size: 5vmin;
+        width: 30vmin;
+    }
+
+    
+    .control > .value {
+        display:inline-block;
+        font-size: 4vmin;
+        width: 10vmin;
+        border-style:none;
+        border-radius: 0.8vmin;
+        background-color: #bbb;
+        padding: 5px;
+    }
+
+    .control > .range {
+        display:inline-block;
+        width: 40vmin;
+        margin:2vmin 3vmin
+
+    }
+
+    #switch-div {
+        display:none;
+    }
+
+    #ad {
+        display:none;
+        width:10vmax;
+        height: 10vmin;
+        background-color: #FF0099;
+    }
+}
+
+footer {
+    height: 3vh;
+    position: relative;
+    color: #fff;
+    background-color: black;
+    padding: 1vh
+}
+
+footer > a:visited {
+    color:#fff;
+}
+
+footer > * {
+    color:#fff;
+}
+
+
+/*
 #contend {
     display:flex;
     height: 100%;
@@ -41,6 +244,19 @@ header>h1 {
         height: 78vw;
         margin: 10vmin;
     }
+
+    #controls {
+        display:inline-block;
+        width: 78vw;
+        height: 39vw;
+        margin: 10vmin;
+    }
+
+    .control > .label {
+        display:inline-block;
+        width: 15vw;
+        font-size: 4vmin;
+    }
 }
 
 @media(orientation: landscape) {
@@ -50,47 +266,21 @@ header>h1 {
         height: 50vh;
         margin: 2vw;
     }
-}
 
-@media(orientation: portrait) {
-    #controls {
-        display:inline-block;
-        width: 78vw;
-        height: 39vw;
-        margin: 10vmin;
-    }
-}
-
-@media(orientation: landscape) {
     #controls {
         display:inline-block;
         width:50vh;
         height: 25vh;
         margin: 2vw;
     }
+
+    .control > .label {
+        display:inline-block;
+        width: 15vw;
+        font-size: 2vmin;
+    }
 }
-#css-result {
-    background-color: indigo;
-}
-
-#Controls {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin:0px;
-}
-
-.control {
-    display:inline-block;
-    width: 43vw;
-    margin: 1vh 0px;
-}
-
-
-
-
-
 
 #switch-div {
     display:none;
-}
+}*/
