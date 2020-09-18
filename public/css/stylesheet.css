@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color:#000;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin:0px;
+    padding: 0px;
+    color:#fff;
+    display:grid;
+    justify-items: center;
+    grid-template-rows: 120px 1fr 50px;
+}
+header {
+    background-color:#FF0099;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+header > h1 {
+    margin:0;
+    font-size: 2rem;
+}
+#contend {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#box {
+    display: block;
+    background-image: linear-gradient(-225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 255, 0) 60%, #0ff 100%), linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#display > #css-result{
+    background-color: #FF0099;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#display > #btn {
+    background-color: #fff;
+    color:#FF0099;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    transition:500ms;
+    font-weight: bold;
+    cursor: pointer;
+}
+#display > #btn:hover {
+    background-color: #ddd;
+    transition:500ms;
+}
+#display > #btn.copied {
+    background-color:lightgreen !important;
+    transition:500ms;
+}
+#display {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#controls{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:10px;
+    width: 400px;
+    background-color: #333;
+    border-radius: 8px;
+    margin:10px;
+}
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+}
+.control > .label {
+    color:#FF0099;
+    font-weight: bold;
+    padding:10px;
+    width: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.control > .value {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    color: #FF0099;
+    text-align: center;
+    font-weight: bold;
+}
+/*ocultar botoes do input number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+footer{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer > a, footer > a:visited {
+    text-decoration: none;
+    color:#fff;
+}
