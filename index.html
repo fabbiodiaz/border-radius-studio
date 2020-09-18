@@ -6,63 +6,45 @@
     <title>Border Radius Studio</title>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/slider-switch.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/stylesheet.css">
     <header>
         <h1>Border-Radius Studio</h1>
     </header>
-
     <div id="contend">
-        <div id="display">
-            <span id="box"></span>
-            <div>
+        <div id="visual">
+            <div id="box">Contend</div>
+            <div id="display">
                 <span id="css-result">border-radius: 0% 0% 0% 0%</span>
-                <input type="hidden" value="" id="css-result-copy">
-                <button id="btn">Copy</button>
+                <div id="btn">Copy</div>
             </div>
         </div>
         <div id="controls">
-            <div id="1" class="control basic">
+            <div id="1" class="control">
                 <span class="label">Top-Left:</span>
                 <input type="number" min="0" max="100" class="value" value=0>
                 <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
-            <div id="2" class="control basic">
+            <div id="2" class="control">
                 <span class="label">Top-Right:</span>
                 <input type="number" min="0" max="100" class="value" value=0>
                 <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
-            <div id="3" class="control basic">
+            <div id="3" class="control">
                 <span class="label">Botton-Righ:</span>
                 <input type="number" min="0" max="100" class="value" value=0>
                 <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
-            <div id="4" class="control basic">
+            <div id="4" class="control">
                 <span class="label">Botton-Left:</span>
                 <input type="number" min="0" max="100" class="value" value=0>
                 <input type="range" class="range" value="0" min="0" max="100" step="1">
             </div>
-            
-            <div id="switch-div">
-                <span>Modo avançado: </span>
-                <label class="switch">
-                    <link rel="stylesheet" type="text/css" href="./slider-switch.css">
-                    <style src="./slider-switch.css"></style>
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
         </div>
     </div>
-        
-    <div id="ad">
-            
-    </div>
-
     <footer>
-        <span>VIsite o repositório no</span> <a target="blank" href="http://www.github.com/fabbiodiaz/border-radius-studio">GitHub</a>
+        <a target="blank" href="http://www.github.com/fabbiodiaz/border-radius-studio">Visit on GitHub</a>
     </footer>
-
-    <script src="./index.js"></script>
-
+    <script src="./public/scripts/index.js"></script>
 </body>
 </html>
